@@ -1,0 +1,123 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    background-color: ivory;
+}
+#game{
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    position: relative;
+    left: 10%;
+    top: 50px;
+    background:linear-gradient(blue,cyan,cyan);
+    pointer-events: none;
+}
+#character{
+    width: 20px;
+    height: 50px;
+    border-radius: 40%;
+    background-color: red;
+    position:relative;
+    top: 150px;
+    left: 30px;
+}
+#start{
+    width: 490px;
+    height: 10px;
+    position: relative;
+    left: 10%;
+    top: 60px;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 14px;
+    border-radius: 5px;
+}
+#button{
+    cursor: pointer;
+}
+.on{
+    background-color: green;
+}
+.off{
+    background-color: red;
+}
+.animation{
+    animation: jump 0.5s;
+}
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+#block{
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    position: relative;
+    left: 480px;
+    top: 130px;
+    border-radius: 100%;
+}
+.blockin {
+    animation: block 2s infinite linear;
+    }
+
+@keyframes block{
+    0%{left: 480px;}
+    100%{left: -2px;}
+}
+.texts{
+    display: none;
+}
+#head{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-radius: 100%;
+    background-color: red;
+    left: 30px;
+    top: 60px;
+}
+.headmov{
+    animation: headjump 0.5s;
+}
+@keyframes headjump{
+    0%{top: 60px;}
+    30%{top: 10px;}
+    70%{top: 10px;}
+    100%{top: 60px;}
+}
+#disp{
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    position: absolute;
+    top: -5px;
+    left: 230px;
+    text-decoration-color: rebeccapurple;
+    text-align: center;
+    font: 1em sans-serif;
+    font-size: 50px;
+}
+#lhand, #rhand{
+    width: 30px;
+    height: 7px;
+    background-color: red;
+    border-radius: 40%;
+    position: relative;
+    left: 36px;
+    top: 60px;
+    offset-rotate: 0deg;
+
+}
+@keyframes lhanda{
+    0%{top: 60px; rotate: 0deg;}
+    30%{top: 10px;rotate: 90deg;}
+    70%{top: 10px;rotate: 90deg;}
+    100%{top: 60px;rotate: 0deg;}
+}
+.lhands{
+    animation: lhanda 0.5s;
+}
